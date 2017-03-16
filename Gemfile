@@ -14,6 +14,8 @@ gem 'pg', '~> 0.18'
 gem 'materialize-sass'
 # devise
 gem 'devise'
+# socialization
+gem "socialization"
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

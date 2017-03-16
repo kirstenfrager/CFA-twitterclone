@@ -1,6 +1,11 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
+  def toggle_follow
+    current_user.toggle_follow!(User.find(params[:user_id]))
+    redirect_to :back
+  end
+
   # GET /posts
   # GET /posts.json
   def index
@@ -10,6 +15,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @follow_status = current_user.follows?(@post.user) ? 'unfollow' : 'follow'
   end
 
   # GET /posts/new
