@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :comments
   resources :posts do
     member do
       get 'toggle_follow', to: 'posts#toggle_follow'

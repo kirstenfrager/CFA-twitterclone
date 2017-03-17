@@ -8,6 +8,7 @@ class User < ApplicationRecord
   acts_as_liker
 
   has_many :posts
+  has_many :comments
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
