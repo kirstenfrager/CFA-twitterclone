@@ -3,4 +3,6 @@ class Post < ApplicationRecord
 
   acts_as_likeable
 
+  has_many :comments
+
 end

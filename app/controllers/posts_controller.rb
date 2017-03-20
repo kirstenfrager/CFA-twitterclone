@@ -22,6 +22,7 @@ class PostsController < ApplicationController
   def show
     @follow_status = current_user.follows?(@post.user) ? 'unfollow' : 'follow'
     @like_status = current_user.likes?(@post) ? 'unlike' : 'like'
+    @post_comments = @post.comments
   end
 
   # GET /posts/new

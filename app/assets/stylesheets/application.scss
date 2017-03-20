@@ -18,3 +18,9 @@
 $primary-color: color("blue", "lighten-2") !default;
 $secondary-color: color("yellow", "base") !default;
 @import "materialize";
+
+.comment-box {
+  border: solid 2px black;
+  margin-top: 5px;
+  background-color: pink;
+}
