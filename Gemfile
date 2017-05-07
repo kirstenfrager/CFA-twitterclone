@@ -10,6 +10,8 @@ end
 gem 'rails', '~> 5.0.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
+# github login
+gem 'omniauth-github'
 # materialize
 gem 'materialize-sass'
 # devise
